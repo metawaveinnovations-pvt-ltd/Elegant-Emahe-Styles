@@ -1,0 +1,6 @@
+{
+  "name": "Elegant Emahe Style",
+  "description": "Handmade Artist & Content Creator Studio. Custom beaded bracelets, personalized gifts, wedding & Nikkah event creations, and brand collaborations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

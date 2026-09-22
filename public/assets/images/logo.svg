@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Soft blush watercolor gradient -->
+    <radialGradient id="blushBg" cx="45%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FCEEEA" />
+      <stop offset="60%" stop-color="#F6DDD7" />
+      <stop offset="85%" stop-color="#EED0C8" />
+      <stop offset="100%" stop-color="#E5C2BA" />
+    </radialGradient>
+    
+    <!-- Subtle watercolor cloud texture -->
+    <filter id="softTexture" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.05 0" />
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply" />
+    </filter>
+
+    <!-- Metallic warm gold tone -->
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBF82" />
+      <stop offset="50%" stop-color="#C59F5A" />
+      <stop offset="100%" stop-color="#B88A3B" />
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600&amp;display=swap');
+      .script-font {
+        font-family: 'Alex Brush', 'Cormorant Garamond', cursive, serif;
+        font-style: italic;
+      }
+      .sub-font {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        letter-spacing: 0.18em;
+      }
+    </style>
+  </defs>
+
+  <!-- Circular Base Badge -->
+  <circle cx="250" cy="250" r="236" fill="url(#blushBg)" filter="url(#softTexture)" />
+
+  <!-- Double Outer Concentric Gold Rings -->
+  <circle cx="250" cy="250" r="222" fill="none" stroke="url(#goldStroke)" stroke-width="1.8" opacity="0.8" />
+  <circle cx="250" cy="250" r="214" fill="none" stroke="url(#goldStroke)" stroke-width="1.2" opacity="0.65" />
+
+  <!-- Decorative Gold Specks -->
+  <circle cx="415" cy="110" r="3" fill="#C59F5A" opacity="0.75" />
+  <circle cx="430" cy="128" r="2" fill="#DFBF82" opacity="0.6" />
+  <circle cx="70" cy="365" r="3.5" fill="#C59F5A" opacity="0.7" />
+  <circle cx="85" cy="345" r="2" fill="#DFBF82" opacity="0.5" />
+
+  <!-- Top Heart Accent -->
+  <path d="M250 128 C250 124 246 118 240 118 C233 118 229 123 229 129 C229 138 245 148 250 151 C255 148 271 138 271 129 C271 123 267 118 260 118 C254 118 250 124 250 128 Z" fill="#B46B63" opacity="0.85" />
+
+  <!-- Brand Script Lettering: "Elegant" -->
+  <text x="245" y="215" text-anchor="middle" font-size="82" fill="#2C2424" class="script-font" font-weight="normal">Elegant</text>
+  
+  <!-- Brand Script Lettering: "Emahe Style" -->
+  <text x="245" y="300" text-anchor="middle" font-size="80" fill="#2C2424" class="script-font" font-weight="normal">Emahe Style</text>
+
+  <!-- Bottom Divider Heart & Lines -->
+  <line x1="120" y1="340" x2="230" y2="340" stroke="#C59F5A" stroke-width="1" opacity="0.65" />
+  <path d="M250 338 C250 335 247 330 242 330 C237 330 234 334 234 338 C234 345 246 352 250 355 C254 352 266 345 266 338 C266 334 263 330 258 330 C253 330 250 335 250 338 Z" fill="#B46B63" opacity="0.85" />
+  <line x1="270" y1="340" x2="380" y2="340" stroke="#C59F5A" stroke-width="1" opacity="0.65" />
+
+  <!-- Subtitle: BRACELETS • GIFTS • WEDDING ITEMS -->
+  <text x="250" y="375" text-anchor="middle" font-size="14.5" font-weight="600" fill="#785B58" class="sub-font" opacity="0.9">BRACELETS · GIFTS</text>
+  <text x="250" y="398" text-anchor="middle" font-size="14.5" font-weight="600" fill="#785B58" class="sub-font" opacity="0.9">WEDDING ITEMS</text>
+
+  <!-- Delicate Botanical Leaf Branch on Right Edge -->
+  <g transform="translate(370, 140) rotate(12)" opacity="0.82">
+    <!-- Main stem -->
+    <path d="M15 220 Q 30 110 55 5" fill="none" stroke="#B47F78" stroke-width="1.8" stroke-linecap="round" />
+    
+    <!-- Leaves -->
+    <path d="M55 5 C 65 18 62 35 48 30 C 44 20 48 10 55 5 Z" fill="#C8968F" />
+    <path d="M46 45 C 60 52 64 70 50 72 C 40 64 42 50 46 45 Z" fill="#C8968F" />
+    <path d="M38 78 C 22 72 18 90 28 98 C 36 94 40 84 38 78 Z" fill="#D3A29B" />
+    <path d="M35 110 C 50 115 54 135 40 140 C 30 132 32 116 35 110 Z" fill="#C8968F" />
+    <path d="M26 142 C 10 138 6 156 18 164 C 26 158 28 148 26 142 Z" fill="#D3A29B" />
+    <path d="M22 178 C 36 185 38 202 26 208 C 18 200 18 185 22 178 Z" fill="#C8968F" />
+  </g>
+</svg>

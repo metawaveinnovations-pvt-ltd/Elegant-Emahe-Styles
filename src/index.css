@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    --color-canvas: #FAF7F2;
+    --color-surface: #FFFDFB;
+    --color-surface-subtle: #F5EFE6;
+    --color-blush: #F7EAE6;
+    --color-rose: #C67C74;
+    --color-rose-dark: #9E4F47;
+    --color-gold: #C29B53;
+    --color-gold-light: #F4EBD7;
+    --color-text-main: #2C2424;
+    --color-text-muted: #6E6160;
+    --color-border: #E8DFD4;
+    --color-border-subtle: #F0E8DC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: var(--color-text-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #F3DDD8;
+    color: #2C2424;
+  }
+}
+
+.font-serif-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-brand {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Restrained brand styling */
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-canvas {
+  background-color: var(--color-canvas);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surface-subtle {
+  background-color: var(--color-surface-subtle);
+}
+
+.bg-blush-soft {
+  background-color: var(--color-blush);
+}
+
+.text-brand-main {
+  color: var(--color-text-main);
+}
+
+.text-brand-muted {
+  color: var(--color-text-muted);
+}
+
+.text-brand-rose {
+  color: var(--color-rose);
+}
+
+.text-brand-gold {
+  color: var(--color-gold);
+}
+
+.border-brand-subtle {
+  border-color: var(--color-border);
+}
+
+/* Subtle grain and textures for editorial handmade boutique */
+.editorial-border {
+  border: 1px solid rgba(44, 36, 36, 0.08);
+}
+
+.editorial-shadow {
+  box-shadow: 0 10px 30px -10px rgba(78, 55, 55, 0.06), 0 4px 12px -4px rgba(78, 55, 55, 0.03);
+}
+
+.editorial-card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -12px rgba(110, 80, 80, 0.12);
+}
+
+/* Hide scrollbar for clean horizontal gallery if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
